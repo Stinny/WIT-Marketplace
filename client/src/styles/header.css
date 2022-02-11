@@ -1,0 +1,57 @@
+.nav-con {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #e5e5e5;
+}
+
+.header-con {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 1;
+  width: 90%;
+  max-width: 1200px;
+  padding: 0 24px;
+  background-color: #e5e5e5;
+}
+
+.logo-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.links-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  width: 200px;
+}
+
+.signup-link {
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 8px;
+  padding: 8px;
+  color: gray;
+}
+
+.login-link {
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 8px;
+  color: #000;
+}
