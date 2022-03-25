@@ -13,7 +13,10 @@ server.use(cors());
 const authRouter = require('./routes/auth');
 const productsRouter = require('./routes/products');
 
+//all authentication routes will go here
 server.use('/api/auth', authRouter);
+
+//all product routes will go here
 server.use('/api/products', productsRouter);
 
 server.listen('8000', () => console.log('Server started...'));
