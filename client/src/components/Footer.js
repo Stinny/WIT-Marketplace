@@ -3,9 +3,11 @@ import '../styles/footer.css';
 
 const Footer = () => {
   return (
-    <div>
-      <div>Footer</div>
-    </div>
+    <footer className='footer-con'>
+      <div className='footer-wrap'>
+        <h1 className='text-align'>Footer</h1>
+      </div>
+    </footer>
   );
 };
 

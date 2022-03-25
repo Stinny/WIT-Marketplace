@@ -1,10 +1,13 @@
 import React from 'react';
+import ProductsDisplay from '../components/ProductsDisplay';
+import Hero from '../components/Hero';
 
 const Home = () => {
   return (
     <div>
       <div>
-        <h1>Home page fuckers</h1>
+        <Hero />
+        <ProductsDisplay />
       </div>
     </div>
   );
