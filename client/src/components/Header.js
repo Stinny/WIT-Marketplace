@@ -13,6 +13,13 @@ const Header = () => {
           </Link>
         </div>
 
+        <div className='search-area'>
+          <input className='search-bar' type='text'  placeholder='Enter search key words..'/>
+          <Link to='./listing'>
+            <button className='search-button' type='button'>Search</button>
+          </Link>
+        </div>
+
         <div className='links-con'>
           <Link to='/signup'>
             <button className='signup-link'>Signup</button>
