@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/heroStyles.css';
+import '../styles/carouselStyles.css';
 import Carousel from "react-elastic-carousel"
 //Just import advertisement images here
 import add1 from '../Images/add1.jpg';
