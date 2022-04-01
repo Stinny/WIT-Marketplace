@@ -9,8 +9,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import CreateProduct from './pages/CreateProduct';
 import Cart from './pages/Cart';
-import Listing from './pages/Listing'
-import AboutUs from './pages/AboutUs'
+import Listing from './pages/Listing';
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -24,14 +23,13 @@ function App() {
       <Header toggle={toggle} />
       {/* <SideBar isOpen={isOpen} toggle={toggle} /> */}
       <Routes>
-          <Route exact path='/cart' element={<Cart />} />
-          <Route exact path='/addproduct' element={<CreateProduct />} />
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/listing' element={<Listing />} />
-          <Route exact path='/login' element={<Login />} />
-          <Route exact path='/item/:itemId' element={<ProductDetail />} />
-          <Route exact path='/signup' element={<Signup />} />
-          <Route exact path='/AboutUs' element={<AboutUs />} />
+        <Route exact path='/cart' element={<Cart />} />
+        <Route exact path='/addproduct' element={<CreateProduct />} />
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/listing' element={<Listing />} />
+        <Route exact path='/login' element={<Login />} />
+        <Route exact path='/item/:itemId' element={<ProductDetail />} />
+        <Route exact path='/signup' element={<Signup />} />
       </Routes>
       <Footer />
     </>

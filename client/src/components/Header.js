@@ -14,9 +14,15 @@ const Header = () => {
         </div>
 
         <div className='search-area'>
-          <input className='search-bar' type='text'  placeholder='Enter search key words..'/>
-          <Link to='./listing'>
-            <button className='search-button' type='button'>Search</button>
+          <input
+            className='search-bar'
+            type='text'
+            placeholder='Enter search key words..'
+          />
+          <Link to='/listing'>
+            <button className='search-button' type='button'>
+              Search
+            </button>
           </Link>
 
           <Link to='/addproduct'>
