@@ -1,19 +1,13 @@
 .smallCarousel{
     font-family: sans-serif;
     text-align: center;
-    width:30%;
+    width:100%;
     border-width: 2px;
     border-color: #000000;
     border-style: solid;
     background-color: #cdcece;
     margin-left: 10px;
     padding-bottom: 0px;
-}
-
-
-
-.imgCarousel{
-
 }
 
 .smallCarousel button.rec-dot{
