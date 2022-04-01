@@ -1,16 +1,8 @@
-.prods-con {
-  margin: 0 auto;
-}
-
-.prods-wrap {
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 1000px;
-  height: 600px;
-  border: 2px solid gray;
-  display: flex;
-  flex-direction: column;
+  .recommendedArea{
+  border-width: 2px;
+  border-style: solid;
+  margin-left: 4%;
+  margin-right: 4%;
   justify-content: center;
   align-items: center;
 }

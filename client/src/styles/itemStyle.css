@@ -3,8 +3,17 @@
     text-align: center;
     width: 30%;
     height: 30%;
-    border-width: 20px;
-    border-color: black;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    padding-left: 1px;
+    padding-right: 5px;
+    background-color: #cdcece;
+    margin-left: 10px;
+}
+
+.smallCarousel button.rec-dot{
+    background-color: rgb(255, 199, 8);
 }
 
 img {
@@ -13,3 +22,4 @@ img {
     /*If convenient we can zoom in into images*/
     /*transform   : scale(1.25);*/
 }
+

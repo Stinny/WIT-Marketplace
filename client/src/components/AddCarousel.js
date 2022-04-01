@@ -10,7 +10,7 @@ import add4 from '../Images/add4.jpg';
 export default function showCarousel(){
 
     return(
-        <div className="carousel" >
+        <div className="carouselView" >
             <Carousel>
                 <div>
                     <img src={add1}/>

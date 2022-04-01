@@ -1,7 +1,21 @@
-.carousel{
+.carouselView{
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
   font-family: sans-serif;
   text-align: center;
+}
+
+.carouselView button.rec-dot{
+  background-color: rgb(255, 199, 8);
+}
+
+/*!*Hide disabled buttons*!*/
+.carouselView .rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+
+
+.carouselView button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+  box-shadow: 0 0 1px 3px rgb(2, 45, 189);
 }
