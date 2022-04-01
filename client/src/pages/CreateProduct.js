@@ -2,20 +2,11 @@ import React, { useReducer, useState } from 'react';
 import '../styles/sellStyles.css';
 
 const formReducer = (state, event) => {
-    if(event.reset) {
-        return {
-            apple: '',
-            count: 0,
-            name: '',
-            'gift-wrap': false,
-        }
-    }
     return {
         ...state,
         [event.name]: event.value
     }
 }
-
 function CreateProduct() {
     const [formData, setFormData] = useReducer(formReducer, {
         //Set default data
@@ -77,9 +68,6 @@ function CreateProduct() {
                                   placeholder="Describe your item thoroughly, buyers love information."/>
                     </label>
                 </fieldset>
-
-
-
                 <button id="sell-button" type="submit" disabled={submitting}>DONE</button>
             </form>
         </div>
