@@ -1,0 +1,15 @@
+.smallCarousel{
+    font-family: sans-serif;
+    text-align: center;
+    width: 30%;
+    height: 30%;
+    border-width: 20px;
+    border-color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    /*If convenient we can zoom in into images*/
+    /*transform   : scale(1.25);*/
+}

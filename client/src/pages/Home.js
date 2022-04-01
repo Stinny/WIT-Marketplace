@@ -1,12 +1,12 @@
 import React from 'react';
 import ProductsDisplay from '../components/ProductsDisplay';
-import Carousel from '../components/Carousel';
+import AddCarousel from '../components/AddCarousel';
 
 const Home = () => {
   return (
     <div>
       <div>
-        <Carousel />
+        <AddCarousel />
         <ProductsDisplay />
       </div>
     </div>
