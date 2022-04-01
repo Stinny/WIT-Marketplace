@@ -1,8 +1,26 @@
-.recommendedArea{
-  border-width: 2px;
-  border-style: solid;
+.suggestionsArea{
   margin-left: 4%;
   margin-right: 4%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
+
+.carouselView{
+  margin-bottom: 30px;
+}
+
+
+
+.parent button.rec-dot{
+  visibility: hidden;
+}
+
+.section{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: rgba(255, 199, 8, 0.5);
+}
+

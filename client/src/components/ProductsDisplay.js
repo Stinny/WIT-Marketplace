@@ -6,15 +6,15 @@ import Carousel from "react-elastic-carousel";
 const ProductsDisplay = () => {
     const breakPoints = [
         {width: 1, itemsToShow: 1},
-        {width: 500, itemsToShow: 2},
+        {width: 700, itemsToShow: 2},
         {width: 1200, itemsToShow: 3},
         {width: 1500, itemsToShow: 4},
     ]
 
   return (
     <div>
-      <div className="recommendedArea">
-          <p>Recommended for you</p>
+      <div className="suggestionsArea">
+          <p className="section"> Recommended Items</p>
           <div className="item">
               <Carousel className="parent" breakPoints={breakPoints}>
                   <ItemView className="child"/>
@@ -26,6 +26,19 @@ const ProductsDisplay = () => {
               </Carousel>
           </div>
       </div>
+        <div className="suggestionsArea">
+            <p className="section"> Recommended Items</p>
+            <div className="item">
+                <Carousel className="parent" breakPoints={breakPoints}>
+                    <ItemView className="child"/>
+                    <ItemView className="child"/>
+                    <ItemView className="child"/>
+                    <ItemView className="child"/>
+                    <ItemView className="child"/>
+                    <ItemView className="child"/>
+                </Carousel>
+            </div>
+        </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@
 }
 
 /*!*Hide disabled buttons*!*/
-.carouselView .rec.rec-arrow:disabled {
+.rec.rec-arrow:disabled {
   visibility: hidden;
 }
 
