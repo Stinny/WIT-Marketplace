@@ -46,6 +46,20 @@
   color: gray;
 }
 
+.sell-link{
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #000;
+  margin-left: 20px;
+  background-color: rgb(255, 199, 8);
+}
+
 .login-link {
   font-size: 16px;
   cursor: pointer;
