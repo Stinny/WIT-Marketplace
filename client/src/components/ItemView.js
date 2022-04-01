@@ -11,7 +11,7 @@ import img3 from '../Images/e3.jpeg';
 export default function showItem(){
     return(
         <div className="smallCarousel" >
-            <Carousel>
+            <Carousel className="imgCarousel">
                 <div>
                     <img src={img0}/>
                 </div>
@@ -25,6 +25,11 @@ export default function showItem(){
                     <img src={img3}/>
                 </div>
             </Carousel>
+            <div id="info">
+                <p>Item title</p>
+                <p>$1,000</p>
+            </div>
+
         </div>
     );
 }
