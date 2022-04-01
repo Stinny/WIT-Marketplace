@@ -10,7 +10,6 @@ import Signup from './pages/Signup';
 import CreateProduct from './pages/CreateProduct';
 import Cart from './pages/Cart';
 import Listing from './pages/Listing'
-import Sell from './pages/Sell'
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -31,7 +30,6 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/item/:itemId' element={<ProductDetail />} />
           <Route exact path='/signup' element={<Signup />} />
-          <Route exact path='/sell' element={<Sell />} />
       </Routes>
       <Footer />
     </>

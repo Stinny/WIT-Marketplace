@@ -19,16 +19,10 @@ const Header = () => {
             <button className='search-button' type='button'>Search</button>
           </Link>
 
-          <Link to='/sell'>
-            <button className='sell-link'>Sell</button>
+          <Link to='/addproduct'>
+            <button className='add-link'>Sell</button>
           </Link>
         </div>
-
-        {/*<div className='sell-area'>*/}
-        {/*  <Link to='/sell'>*/}
-        {/*    <button className='sell-link'>Sell</button>*/}
-        {/*  </Link>*/}
-        {/*</div>*/}
 
         <div className='links-con'>
           <Link to='/signup'>
