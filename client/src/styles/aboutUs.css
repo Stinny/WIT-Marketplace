@@ -1,0 +1,27 @@
+.aboutUs-con{
+    height: 710px;
+}
+
+.aboutUs-con h2{
+    text-align: center;
+    background-color: #ecd390;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 2em;
+}
+
+.aboutUs-wrap div{
+    margin: 20px 20% 20px 20%;
+    text-align: center;
+    line-height: 1.6;
+    border-color: #ecd390;
+    border-style: solid ;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+.aboutUs-con p{
+    text-align: center;
+}
+
+
