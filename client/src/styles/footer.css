@@ -1,7 +1,9 @@
 .footer-con {
-  width: 100%;
-  height: 70px;
   background-color: #e5e5e5;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  margin-top: auto;
+  padding-left: 5%;
 }
 
 .footer-logo{
