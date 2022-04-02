@@ -113,3 +113,12 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.go{
+    border-radius: 30px;
+    width: 30px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

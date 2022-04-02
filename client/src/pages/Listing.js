@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/listingStyles.css';
 import ItemView from '../components/ItemView'
 
-const Cart = () => {
+const Listings = () => {
     return (
         <div id='page-container'>
             <div className='top-bar'>
@@ -31,7 +31,7 @@ const Cart = () => {
             <div className='page-con'>
 
                 <div className='filter-con'>
-                    <div className="filters-text">
+                    <div className="price-filter">
                         <p className="filters-title">Price filter</p>
                         <button className='filter'>Maximum $100 </button> <br/>
                         <button className='filter'>Minimum $10 </button> <br/>
@@ -136,4 +136,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default Listings;
