@@ -12,7 +12,7 @@ const ProductsDisplay = () => {
     ]
 
   return (
-    <div>
+    <div className='product-display-con'>
       <div className="suggestionsArea">
           <p className="section"> Recommended Items</p>
           <div className="item">
