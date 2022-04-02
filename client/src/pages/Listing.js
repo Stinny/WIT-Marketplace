@@ -180,8 +180,13 @@ const Listings = () => {
 
             <div id='page-select'>
                 <div>
-                    <button className='filter blue'>previous</button> <br/>
-                    <button className='filter blue'>next</button> <br/>
+                    <button className='filter blue'>previous</button>
+                    <button className='filter'>1</button>
+                    <button className='filter'>2</button>
+                    <button className='filter'>3</button>
+                    . . .
+                    <button className='filter'>20</button>
+                    <button className='filter blue'>next</button>
                 </div>
             </div>
         </div>

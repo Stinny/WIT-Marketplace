@@ -7,7 +7,6 @@
     border: 4px #f6bf17 solid;
     border-radius: 20px;
     margin-right: 10%;
-    margin-bottom: 10px;
     display: inline-flex;
     flex-direction: row;
     padding: 10px;
@@ -18,7 +17,6 @@
 
 .filter-con{
     border: 4px #f6bf17 solid;
-    margin-bottom: 10px;
     display: inline-flex;
     border-radius: 20px;
     margin-right: 10px;
@@ -130,4 +128,9 @@
 
 #page-select{
     text-align: center;
+}
+
+#page-select div{
+    font-size: 1.5em;
+    margin: 20px;
 }
