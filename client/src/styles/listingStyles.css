@@ -84,14 +84,11 @@
 }
 
 /*Filters styling*/
-.filters-text{
-    font-family: Arial;
-}
-
 .filters-title{
     font-size: 1.1em;
     font-family: Arial;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .filter{
@@ -125,4 +122,12 @@
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.blue{
+    color: dodgerblue;
+}
+
+#page-select{
+    text-align: center;
 }
