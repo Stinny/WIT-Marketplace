@@ -1,11 +1,24 @@
+.page-con{
+    display: flex;
+    flex-direction: row;
+}
+
 .listings-con{
     display: inline-flex;
     flex-direction: row;
     padding: 10px;
     border: 2px blue solid;
-    justify-content: center;
-    /*justify-content: space-between;*/
+    justify-content: flex-start;
     flex-wrap: wrap;
+    flex: 3;
+}
+
+.filter-con{
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
+    border: 2px #d90f0f solid;
+    flex: 1;
 }
 
 .listings-con div {
@@ -16,4 +29,30 @@
 
 .item{
     padding: 1%;
+}
+
+.top-bar{
+    display: inline;
+}
+
+#sort-by{
+    /*display: inline-flex;*/
+    display: inline-block;
+}
+
+#filters-title{
+    /*display: inline-flex;*/
+    /*width: 30%;*/
+    /*border: 2px #d90f0f solid;*/
+    /*flex: 1;*/
+    display: inline;
+}
+
+#list-area{
+    /*display: inline-flex;*/
+    display: inline;
+    /*width: 70%;*/
+    /*border: 2px #d90f0f solid;*/
+    /*float: right;*/
+    /*flex: 4;*/
 }
