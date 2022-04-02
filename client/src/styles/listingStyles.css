@@ -1,37 +1,19 @@
-.listings-con {
-    width: 100%;
-    height: 700px;
-    margin-top: 30px;
-}
-
-.area-wrap {
-    display: flex;
-    justify-content: space-between;
-}
-
-.filter-con {
-    width: 28%;
-    height: 650px;
-    border: 2px solid gray;
-    margin-left: 10px;
-    display: flex;
+.listings-con{
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 2px blue solid;
     justify-content: center;
-    padding-top: 10px;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
 }
 
-.items-con {
-    width: 68%;
-    height: 660px;
-    border: 2px solid gray;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.listings-con div {
+    /*border: 2px red solid;*/
+    width: 400px;
+    /*height: 100%;*/
 }
 
-.items-show {
-    width: 100%;
-    height: 650px;
-    border: 1px solid gray;
+.item{
+    padding: 1%;
 }

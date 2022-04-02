@@ -1,22 +1,39 @@
 import React from 'react';
 import '../styles/listingStyles.css';
+import ItemView from '../components/ItemView'
 
 const Cart = () => {
     return (
-        <div className='listings-con'>
-
-            <div className='area-wrap'>
-
-                <div className='filter-con'>
-                    <h2> Filters </h2>
+        <div class='page-con'>
+            <div class='listings-con'>
+                <div class='item'>
+                    <ItemView/>
                 </div>
-                <div className='items-con'>
-                    <h2> Results </h2>
-                    <div className='items-show'></div>
+                <div className='item'>
+                    <ItemView/>
                 </div>
-
+                <div className='item'>
+                    <ItemView/>
+                </div>
+                <div className='item'>
+                    <ItemView/>
+                </div>
+                <div className='item'>
+                    <ItemView/>
+                </div>
+                <div className='item'>
+                    <ItemView/>
+                </div>
+                <div className='item'>
+                    <ItemView/>
+                </div>
+                <div className='item'>
+                    <ItemView/>
+                </div>
+                <div className='item'>
+                    <ItemView/>
+                </div>
             </div>
-
         </div>
     );
 };
