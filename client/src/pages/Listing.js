@@ -5,32 +5,94 @@ import ItemView from '../components/ItemView'
 const Cart = () => {
     return (
         <div id='page-container'>
+
             <div className='top-bar'>
-                    <div id='filters-title'>
-                        <h3>
+
+                <div id='filters-title'>
+                    <h3 className='bold'>
                         Filters
-                        </h3>
+                    </h3>
+                </div>
+
+                <div id='list-area'>
+                    <div>
+                        <h3 id='list-title' className='bold'>Results</h3>
                     </div>
-                    <div id='list-area'>
-                        <h3 id='list-title'>Results</h3>
-                            <p><strong>Sort by</strong></p>
-                            <select id="sort-by">
+                    <div id='sorting'>
+                        <p>Sort by:
+                            <select id="select-sort-by">
                                 <option value="mr">Most Relevant</option>
                                 <option value="lp">Lowest Price</option>
                                 <option value="hp">Highest Price</option>
                             </select>
+                        </p>
                     </div>
+                </div>
             </div>
 
-            <div class='page-con'>
-                <div class='filter-con'>
-                    <div class='item'>
+            <div className='page-con'>
+                <div className='filter-con'>
+                    <div>
                         <p>Text</p>
                     </div>
                 </div>
 
-                <div class='listings-con'>
-                    <div class='item'>
+                <div className='listings-con'>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
+                        <ItemView/>
+                    </div>
+                    <div className='item'>
                         <ItemView/>
                     </div>
                     <div className='item'>
