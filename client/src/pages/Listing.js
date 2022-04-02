@@ -5,7 +5,6 @@ import ItemView from '../components/ItemView'
 const Cart = () => {
     return (
         <div id='page-container'>
-
             <div className='top-bar'>
 
                 <div id='filters-title'>
@@ -19,7 +18,7 @@ const Cart = () => {
                         <h3 id='list-title' className='bold'>Results</h3>
                     </div>
                     <div id='sorting'>
-                        <p>Sort by:
+                        <p>Order by:
                             <select id="select-sort-by">
                                 <option value="mr">Most Relevant</option>
                                 <option value="lp">Lowest Price</option>
@@ -29,11 +28,18 @@ const Cart = () => {
                     </div>
                 </div>
             </div>
-
             <div className='page-con'>
+
                 <div className='filter-con'>
-                    <div>
-                        <p>Text</p>
+                    <div className="filters-text">
+                        <p className="filters-title">Price filter</p>
+                        <button className='filter'>Maximum $100 </button> <br/>
+                        <button className='filter'>Minimum $10 </button> <br/>
+                        <div id='inline-area'>
+                            <input className='price-range' type='text' placeholder='min'/>
+                            <input className='price-range' type='text' placeholder='max'/>
+                            <button className='go'>></button>
+                        </div>
                     </div>
                 </div>
 

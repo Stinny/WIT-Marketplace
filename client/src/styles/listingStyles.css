@@ -78,3 +78,38 @@
     font-size: 1.5em;
     padding: 5px;
 }
+
+/*Filters styling*/
+.filters-text{
+    font-family: Arial;
+}
+
+.filters-title{
+    font-size: 1.1em;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.filter{
+    border: none;
+    font-size:1.1em;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-buttom: 2px;
+    background-color: #ffffff;
+}
+
+.filter:hover{
+    color: dodgerblue;
+}
+
+#inline-area{
+    display: inline-flex;
+}
+
+.range{
+    width: 30%;
+    font-size: 1.0em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
