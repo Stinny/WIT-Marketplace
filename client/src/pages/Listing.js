@@ -37,6 +37,7 @@ const Cart = () => {
                         <button className='filter'>Minimum $10 </button> <br/>
                         <div id='inline-area'>
                             <input className='price-range' type='text' placeholder='min'/>
+                            -
                             <input className='price-range' type='text' placeholder='max'/>
                             <button className='go'>></button>
                         </div>
