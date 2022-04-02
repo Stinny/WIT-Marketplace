@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/productsDisplayStyles.css';
-import ItemView from './ItemView'
+import ItemView500px from './ItemView500px'
 import Carousel from "react-elastic-carousel";
 
 const ProductsDisplay = () => {
@@ -17,12 +17,12 @@ const ProductsDisplay = () => {
           <p className="section"> Recommended Items</p>
           <div className="item">
               <Carousel className="parent" breakPoints={breakPoints}>
-                  <ItemView className="child"/>
-                  <ItemView className="child"/>
-                  <ItemView className="child"/>
-                  <ItemView className="child"/>
-                  <ItemView className="child"/>
-                  <ItemView className="child"/>
+                  <ItemView500px className="child"/>
+                  <ItemView500px className="child"/>
+                  <ItemView500px className="child"/>
+                  <ItemView500px className="child"/>
+                  <ItemView500px className="child"/>
+                  <ItemView500px className="child"/>
               </Carousel>
           </div>
       </div>
@@ -30,12 +30,12 @@ const ProductsDisplay = () => {
             <p className="section"> Recommended Items</p>
             <div className="item">
                 <Carousel className="parent" breakPoints={breakPoints}>
-                    <ItemView className="child"/>
-                    <ItemView className="child"/>
-                    <ItemView className="child"/>
-                    <ItemView className="child"/>
-                    <ItemView className="child"/>
-                    <ItemView className="child"/>
+                    <ItemView500px className="child"/>
+                    <ItemView500px className="child"/>
+                    <ItemView500px className="child"/>
+                    <ItemView500px className="child"/>
+                    <ItemView500px className="child"/>
+                    <ItemView500px className="child"/>
                 </Carousel>
             </div>
         </div>
