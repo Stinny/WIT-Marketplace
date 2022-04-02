@@ -35,6 +35,10 @@
     width: 295px;
 }
 
+.itemImg{
+    margin-bottom: 10px;
+}
+
 .top-bar{
     /*border: 4px blue solid;*/
     margin-top: 20px;

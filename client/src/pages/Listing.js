@@ -45,88 +45,88 @@ const Cart = () => {
                 </div>
 
                 <div className='listings-con'>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
-                    <div className='item'>
+                    <div className='itemImg'>
                         <ItemView/>
                     </div>
 
