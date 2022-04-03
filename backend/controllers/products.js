@@ -2,7 +2,7 @@ const products = require('../sampleProducts');
 
 //DB model
 const Product = require('../models/Product');
-const upoloadToS3 = require('../../../kretey/v2/kretey-server/utils/uploadToS3');
+const uploadToS3 = require('../../../kretey/v2/kretey-server/utils/uploadToS3');
 
 //route controller for getting all prodcucts from DB
 //uses sample projects right now
@@ -29,14 +29,16 @@ const getSingle = async (req, res) => {
 
 //creates new product with request data
 const create = async (req, res) => {
+  console.log(req.body);
   try {
-    const { title, description, price, condition, imageUrls } = req.body;
+    const { title, description, price, condition, stock, imageUrls } = req.body;
 
     const newProduct = new Product({
       title: title,
       description: description,
       price: price,
       condition: condition,
+      stock: stock,
     });
 
     //pushes the imagesUrls in request to the Product images array
@@ -53,14 +55,17 @@ const create = async (req, res) => {
   }
 };
 
+//uploads images to S3 bucket and
+//returns the location URLs
 const imageUpload = async (req, res) => {
   const files = req.files;
 
   const urls = [];
-
   try {
+    console.log(files);
+
     for (var i = 0; i < files.length; i++) {
-      const uploadedFile = await upoloadToS3(files[i]);
+      const uploadedFile = await uploadToS3(files[i]);
       urls.push(uploadedFile.Location);
     }
 

@@ -6,7 +6,7 @@ const s3 = new S3({
   Bucket: process.env.AWS_BUCK_NAME,
 });
 
-const upoloadToS3 = (file) => {
+const uploadToS3 = (file) => {
   const params = {
     Bucket: process.env.AWS_BUCK_NAME,
     Key: file.originalname,
@@ -18,4 +18,4 @@ const upoloadToS3 = (file) => {
   return s3.upload(params).promise();
 };
 
-module.exports = upoloadToS3;
+module.exports = uploadToS3;

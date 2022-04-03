@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './components/Header';
@@ -10,8 +11,8 @@ import Signup from './pages/Signup';
 import CreateProduct from './pages/CreateProduct';
 import Cart from './pages/Cart';
 import Listing from './pages/Listing';
-import AboutUs from './pages/AboutUs'
-import Help from './pages/Help'
+import AboutUs from './pages/AboutUs';
+import Help from './pages/Help';
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -22,20 +23,24 @@ function App() {
   };
   return (
     <>
-      <Header toggle={toggle} />
-      {/* <SideBar isOpen={isOpen} toggle={toggle} /> */}
-      <Routes>
-        <Route exact path='/cart' element={<Cart />} />
-        <Route exact path='/addproduct' element={<CreateProduct />} />
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/listing' element={<Listing />} />
-        <Route exact path='/login' element={<Login />} />
-        <Route exact path='/item/:itemId' element={<ProductDetail />} />
-        <Route exact path='/aboutUs' element={<AboutUs />} />
-        <Route exact path='/signup' element={<Signup />} />
-        <Route exact path='/Help' element={<Help />} />
-      </Routes>
-      <Footer />
+      <BrowserRouter>
+        <Header toggle={toggle} />
+        {/* <SideBar isOpen={isOpen} toggle={toggle} /> */}
+
+        <Routes>
+          <Route exact path='/cart' element={<Cart />} />
+          <Route exact path='/addproduct' element={<CreateProduct />} />
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/listing' element={<Listing />} />
+          <Route exact path='/login' element={<Login />} />
+          <Route exact path='/item/:itemId' element={<ProductDetail />} />
+          <Route exact path='/aboutUs' element={<AboutUs />} />
+          <Route exact path='/signup' element={<Signup />} />
+          <Route exact path='/Help' element={<Help />} />
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
