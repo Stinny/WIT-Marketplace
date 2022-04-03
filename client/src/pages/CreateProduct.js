@@ -32,6 +32,7 @@ function CreateProduct() {
       imagesData.append('productImages', images[i]); //appends actual file object to form data
     }
 
+    //request our server for the uploaded images urls
     const imageUrlsReq = await uploadImagesReq.post(
       '/products/imageupload',
       imagesData
