@@ -2,7 +2,7 @@ const products = require('../sampleProducts');
 
 //DB model
 const Product = require('../models/Product');
-const uploadToS3 = require('../../../kretey/v2/kretey-server/utils/uploadToS3');
+const uploadToS3 = require('../uploadToS3');
 
 //route controller for getting all prodcucts from DB
 //uses sample projects right now
