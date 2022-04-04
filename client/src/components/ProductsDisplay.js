@@ -17,12 +17,9 @@ const ProductsDisplay = ({ products }) => {
         <p className='section'> Recommended Items</p>
         <div className='item'>
           <Carousel className='parent' breakPoints={breakPoints}>
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
+            {products.map((product) => (
+              <ItemView500px className='child' product={product} />
+            ))}
           </Carousel>
         </div>
       </div>
