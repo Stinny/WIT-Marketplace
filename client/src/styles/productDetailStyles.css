@@ -1,0 +1,67 @@
+.detail-con {
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 50px;
+  }
+
+.item-details {
+    size: 5%;
+    margin-left: -15%;
+    position: relative;
+    top: -150px;
+}
+
+.itemName {
+    margin-left: 1%;
+    font-size: 40px;
+    position: relative;
+    right: -52%;
+    top: 128px;
+}
+
+.item-detail-child{
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+    bottom: 4px;
+    background-color: #4CAF50;
+    border: #000000;
+    color: black;
+    padding: 8px;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.instantButton {
+    cursor: pointer;
+    position: relative;
+    left: 175px;
+    bottom: 55.5px;
+    background-color: #FFFF00;
+    border: #000000;
+    color: black;
+    padding: 8px;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.item-details img{
+    width: auto;
+    height: 350px;
+}
+
+.item-details .smallCarousel{
+    border-width: 0px;
+    width:50%;
+}
+.item-details   #info {
+    visibility: hidden;
+    padding-bottom: 0%;
+}

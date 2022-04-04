@@ -2,20 +2,22 @@ import React from 'react';
 import '../styles/header.css';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import testLogo from '../Images/testLogo.png';
 
 const Header = () => {
   return (
     <nav className='nav-con'>
       <div className='header-con'>
         <div className='logo-con'>
-          <Link to='/' style={{ textDecoration: 'none', color: '#000' }}>
-            <span style={{ color: 'rgb(255, 199, 8)' }}>WIT</span> Marketplace
-          </Link>
+          
+          {<Link to='/' style={{ textDecoration: 'none', color: '#000' }}>
+            <img src ={testLogo} className = "logo"/>
+          </Link>}
         </div>
 
         <div className='search-area'>
           <input className='search-bar' type='text'  placeholder='Enter search key words..'/>
-          <Link to='./listing'>
+          <Link to='./productdetail'>
             <button className='search-button' type='button'>Search</button>
           </Link>
 
