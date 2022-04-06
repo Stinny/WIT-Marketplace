@@ -34,18 +34,23 @@ const ProductDetail = () => {
         nameReplacer[0].innerHTML = nameReplacer[0].innerHTML.replace("Loading...", product.title);
         var priceReplacer = document.getElementsByClassName("itemName");
         priceReplacer[0].innerHTML = priceReplacer[0].innerHTML.replace("$Loading...", "$" + product.price);
-        var imgReplacer = document.getElementsByTagName("img");
-        if(product.images.length == 0)
-        {
-          imgReplacer[i].src = nullImage;
-        }
-        else
-        {
-          for(var i = 0; i < imgReplacer.length; i++)
-          {
-            document.getElementsByTagName("imgCarousel")[0].append("<div'><img  src='" + product.images[i] + "'></div>");             
-          }
-        }
+        var countReplacer = document.getElementsByClassName("count");
+        countReplacer[0].innerHTML = countReplacer[0].innerHTML.replace("Loading...", "Amount Left: " + product.stock);
+        var descReplacer = document.getElementsByClassName("desc");
+        descReplacer[0].innerHTML = descReplacer[0].innerHTML.replace("Loading...", product.description);
+        // var imgReplacer = document.getElementsByTagName("img");
+        // {
+        //   for(var i = 0; i < imgReplacer.length; i++)
+        //   {
+        //     if(product.images.length == 0)
+        //     {
+        //       imgReplacer[i].src = nullImage;
+        //     }
+        //     else
+        //       //document.getElementsByTagName("imgCarousel")[0].append("<div'><img  src='" + product.images[i] + "'></div>");   
+        //       imgReplacer[i].src = product.images[i];          
+        //   }
+        // }
 
       }
 
@@ -56,8 +61,8 @@ const ProductDetail = () => {
     });
   
   }
-  
 
+  const item = products[window.location.pathname.split('/')[2]]
 
   return (
     <div className='detail-con'>
@@ -65,13 +70,19 @@ const ProductDetail = () => {
         <div className="item-details">
           <p className='itemName'>Loading...
           <p>
-            <a clasName="price">$Loading...</a> 
+            <a className="price">$Loading...</a> 
+            <p>
+            <a className="count">Loading...</a> 
+            </p>
             </p>
             <button class="button">Add to Cart</button>
             <button class="instantButton">Buy Now</button>
+
+            <p>
+            <a className="desc">Loading...</a> 
+            </p>
           </p>
-          <ItemView className="item-detail-child">
-            
+          <ItemView className="item-detail-child" data={item}>
             
           </ItemView>
         </div>
