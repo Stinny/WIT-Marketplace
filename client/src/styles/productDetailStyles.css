@@ -19,13 +19,15 @@
     top: 178px;
 }
 
-.item-detail-child{
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .button {
     cursor: pointer;
     position: relative;
-    left: 5px;
+    left: 1px;
     bottom: 4px;
     background-color: #4CAF50;
     border: #000000;

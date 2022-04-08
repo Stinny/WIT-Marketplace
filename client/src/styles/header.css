@@ -25,7 +25,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
+  font-size: 2px;
+}
+
+.logo-con img {
+  height: 77px;
+  width: auto;
 }
 
 .links-con {

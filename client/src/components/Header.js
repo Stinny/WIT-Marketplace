@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/header.css';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import logo from '../Images/testLogo.png';
 
 const Header = () => {
   return (
@@ -9,7 +10,8 @@ const Header = () => {
       <div className='header-con'>
         <div className='logo-con'>
           <Link to='/' style={{ textDecoration: 'none', color: '#000' }}>
-            <span style={{ color: 'rgb(255, 199, 8)' }}>WIT</span> Marketplace
+            <img src = {logo}/>
+            {/* <span style={{ color: 'rgb(255, 199, 8)' }}>WIT</span> Marketplace */}
           </Link>
         </div>
 

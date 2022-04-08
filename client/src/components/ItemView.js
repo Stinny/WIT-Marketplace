@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/itemStyle.css';
 import Carousel from "react-elastic-carousel"
+import { Link } from 'react-router-dom';
 
 //Add product images her
 import img0 from '../Images/e0.jpeg';
@@ -12,6 +13,7 @@ import nullImage from '../Images/nullImage.png';
 export default function showItem({ data }){
     if(data != 'undefined' && data)
     {
+        console.log(data);
         if(data.images.length < 1)
         {
             return(
@@ -41,7 +43,7 @@ export default function showItem({ data }){
         )
     }
     return(
-        <div className="smallCarousel" >
+        <div className="smallCarousel">
             <Carousel className="imgCarousel">
                 <div>
                     <img src/>
@@ -56,10 +58,14 @@ export default function showItem({ data }){
                     <img src/>
                 </div>
             </Carousel>
-            <div id="info">
-                <p>Item title</p>
+            
+                <div id="info">
+                <Link to = "/">
+                    <p>Item title</p>
+                </Link>
+                   
                 <p>$1,000</p>
-            </div>
+                </div>
 
         </div>
     );

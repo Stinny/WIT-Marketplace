@@ -5,15 +5,21 @@ import AddCarousel from '../components/AddCarousel';
 import { getAllProducts } from '../api/calls';
 
 const Home = () => {
+
+  var count = 0;
+
+
   const dispatch = useDispatch();
   const products = useSelector((state) => state.product.products);
 
-  console.log(products);
 
   useEffect(() => {
     getAllProducts(dispatch);
+
   }, []);
 
+  
+  var product = products[0];
   return (
     <div>
       <div>
