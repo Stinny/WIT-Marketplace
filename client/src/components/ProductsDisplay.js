@@ -21,6 +21,8 @@ const ProductsDisplay = ({ products }) => {
     return x;
   }
 
+  //Set to the desired number of the newest items to show in the top
+  let nItems = 10;
 
   return (
     <div className='product-display-con'>
@@ -29,30 +31,19 @@ const ProductsDisplay = ({ products }) => {
         <p className='section'>Newest Items</p>
         <div className='item'>
         <Carousel className='parent' breakPoints={breakPoints}>
-            {products.slice(products.length - 5, products.length).map((product) => (
-              <ItemView500px className='child' product={product} itemID={products.length - 5 + initNum() - 1}/>
+            {products.slice(products.length - nItems, products.length).map((product) => (
+              <ItemView500px className='child' product={product} itemID={products.length - nItems + initNum() - 1}/>
             )).reverse()}
-          </Carousel> 
-
-          
-          {/* <Carousel className='parent' breakPoints={breakPoints}>
-            {products.map((product) => (
-              <ItemView500px className='child' product={product} itemID={initNum() - 1}/>
-            )).reverse()}
-          </Carousel> */}
+          </Carousel>
         </div>
       </div>
-      <div className='suggestionsArea'>
-        <p className='section'> Recommended Items</p>
-        <div className='item'>
-          <Carousel className='parent' breakPoints={breakPoints}>
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-            <ItemView500px className='child' />
-          </Carousel>
+
+      <div className='allItems suggestionsArea'>
+        <p className='section'> All Available Items</p>
+        <div className='grid'>
+          {products.slice(0, products.length - (nItems+1)).map((product) => (
+              <ItemView500px className='itemListHome' product={product} itemID={initNum() - (nItems+1)}/>
+          )).reverse()}
         </div>
       </div>
     </div>
