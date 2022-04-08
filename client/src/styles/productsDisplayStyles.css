@@ -31,11 +31,3 @@
   flex-wrap: wrap;
 }
 
-.page-container .itemListHome{
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  width: 295px;
-  border: solid red 50px;
-}
-
