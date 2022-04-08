@@ -45,23 +45,17 @@ img {
     width: auto;
 }
 
-/*button.rec-dot{*/
-/*    visibility: hidden;*/
-/*}*/
+
 
 /*Settings for all carousels*/
-
-/*Change color of dots*/
-button.rec-dot{
-    background-color: rgb(255, 199, 8);
-}
 
 /*Hide disabled buttons*/
 .rec.rec-arrow:disabled {
     visibility: hidden;
 }
 
-/*Color of on focus buttons*/
-button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
-    box-shadow: 0 0 1px 3px rgb(2, 45, 189);
+/**/
+button.rec-dot{
+    position:absolute;
+    visibility: hidden;
 }
