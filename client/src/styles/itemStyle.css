@@ -2,12 +2,9 @@
     font-family: sans-serif;
     text-align: center;
     width:210px;
-    border-width: 2px;
-    border-color: #c6c7c7;
-    border-style: solid;
     background-color: #cdcece;
     margin-left: 10px;
-    padding-bottom: 0px;
+    border: #c6c7c7 solid 2px;
 }
 
 .carousel500px{
@@ -27,8 +24,6 @@ img {
     height: 100%;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    /*If convenient we can zoom in into images*/
-    /*transform   : scale(1.25);*/
 }
 
 #info{
@@ -46,8 +41,7 @@ img {
 }
 
 
-
-/*Settings for all carousels*/
+/*Settings for carousels buttons*/
 
 /*Hide disabled buttons*/
 .rec.rec-arrow:disabled {
