@@ -46,16 +46,16 @@ export default function showItem({ data }){
         <div className="smallCarousel">
             <Carousel className="imgCarousel">
                 <div>
-                    <img src/>
+                    <img src={img0}/>
                 </div>
                 <div>
-                    <img src/>
+                    <img src={img1}/>
                 </div>
                 <div>
-                    <img src/>
+                    <img src={img2}/>
                 </div>
                 <div>
-                    <img src/>
+                    <img src={img3}/>
                 </div>
             </Carousel>
             
