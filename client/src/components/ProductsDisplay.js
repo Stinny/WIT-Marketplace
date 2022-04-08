@@ -28,18 +28,18 @@ const ProductsDisplay = ({ products }) => {
       <div className='suggestionsArea'>
         <p className='section'>Newest Items</p>
         <div className='item'>
-        {/* <Carousel className='parent' breakPoints={breakPoints}>
+        <Carousel className='parent' breakPoints={breakPoints}>
             {products.slice(products.length - 5, products.length).map((product) => (
-              <ItemView500px className='child' product={product} itemID={initNum() - 1}/>
+              <ItemView500px className='child' product={product} itemID={products.length - 5 + initNum() - 1}/>
             )).reverse()}
-          </Carousel>  can be used to limit the amount of new products shown, the page calculation needs to be fixed though*/}
+          </Carousel> 
 
           
-          <Carousel className='parent' breakPoints={breakPoints}>
+          {/* <Carousel className='parent' breakPoints={breakPoints}>
             {products.map((product) => (
               <ItemView500px className='child' product={product} itemID={initNum() - 1}/>
             )).reverse()}
-          </Carousel>
+          </Carousel> */}
         </div>
       </div>
       <div className='suggestionsArea'>

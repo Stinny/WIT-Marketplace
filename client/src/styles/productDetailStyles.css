@@ -11,6 +11,7 @@
     top: -200px;
 }
 
+
 .itemName {
     margin-left: 1%;
     font-size: 40px;
@@ -67,4 +68,12 @@ html, body {
 .item-details   #info {
     visibility: hidden;
     padding-bottom: 0%;
+}
+
+.detail-con .desc{
+    position: relative;
+    top: -200px;
+    left: 230px;
+    word-wrap: break-word;
+    width: 500px;
 }

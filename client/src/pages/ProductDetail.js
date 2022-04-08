@@ -78,15 +78,14 @@ const ProductDetail = () => {
             <button class="button">Add to Cart</button>
             <button class="instantButton">Buy Now</button>
 
-            <p>
-            <a className="desc">Loading...</a> 
-            </p>
           </p>
           <ItemView className="item-detail-child" data={item}>
             
           </ItemView>
         </div>
-          
+        <p class = "desc">
+              <a className="desc" id="desc">Loading...</a> 
+        </p>
     </div> 
     
   );
