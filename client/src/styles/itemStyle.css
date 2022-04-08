@@ -1,7 +1,7 @@
 .smallCarousel{
     font-family: sans-serif;
     text-align: center;
-    width:295px;
+    width:210px;
     border-width: 2px;
     border-color: #c6c7c7;
     border-style: solid;
@@ -19,7 +19,7 @@
     border-style: solid;
     background-color: #cdcece;
     margin-left: 10px;
-    padding-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 button.rec-dot{
