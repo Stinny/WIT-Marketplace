@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getAllProducts } from '../api/calls';
-import '../styles/itemStyle500px.css';
 import Carousel from 'react-elastic-carousel';
 import { Link } from 'react-router-dom';
-import raw from '../items.txt';
+import '../styles/itemStyle.css';
 
 //Add product images her
 import img0 from '../Images/e0.jpeg';
@@ -20,15 +17,17 @@ function increment(num)
   return num++;
 }
 
+export default function showItem({ product, itemID, itemSize }) {
 
-export default function showItem({ product, itemID }) {
+    let size = itemSize
+    let sizeFormat = size == 500 ? "carousel500px" :  "smallCarousel";
   
   if((product != 'undefined' && product))
     {
       if(product.images.length < 1)
         {
           return(
-            <div className="carousel500px" >
+            <div className={sizeFormat} >
             <Carousel className="imgCarousel">
                 <div>
                   <Link to = {"/item/" + itemID}>

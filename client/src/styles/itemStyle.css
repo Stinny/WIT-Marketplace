@@ -22,10 +22,6 @@
     margin-bottom: 10px;
 }
 
-button.rec-dot{
-    visibility: hidden;
-}
-
 img {
     width: 100%;
     height: 100%;
@@ -44,3 +40,28 @@ img {
     margin-bottom: 0px;
 }
 
+.carousel500px .imgCarousel img{
+    height: 250px;
+    width: auto;
+}
+
+/*button.rec-dot{*/
+/*    visibility: hidden;*/
+/*}*/
+
+/*Settings for all carousels*/
+
+/*Change color of dots*/
+button.rec-dot{
+    background-color: rgb(255, 199, 8);
+}
+
+/*Hide disabled buttons*/
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+/*Color of on focus buttons*/
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    box-shadow: 0 0 1px 3px rgb(2, 45, 189);
+}
