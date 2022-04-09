@@ -23,10 +23,8 @@ const ProductDetail = () => {
     .then(text => {
       
       var textArr = text.split("\n");
-      console.log(textArr[1]);
       
-      var pathArray = window.location.pathname.split('/');
-      var product = products[pathArray[2]];
+      var product = products.find(x => x._id.toLowerCase().includes(window.location.pathname.split('/')[2]));
       if(typeof product != 'undefined' && products)
       {
         console.log(product.title);
@@ -38,39 +36,22 @@ const ProductDetail = () => {
         countReplacer[0].innerHTML = countReplacer[0].innerHTML.replace("Loading...", "Amount Left: " + product.stock);
         var descReplacer = document.getElementsByClassName("desc");
         descReplacer[0].innerHTML = descReplacer[0].innerHTML.replace("Loading...", product.description);
-        // var imgReplacer = document.getElementsByTagName("img");
-        // {
-        //   for(var i = 0; i < imgReplacer.length; i++)
-        //   {
-        //     if(product.images.length == 0)
-        //     {
-        //       imgReplacer[i].src = nullImage;
-        //     }
-        //     else
-        //       //document.getElementsByTagName("imgCarousel")[0].append("<div'><img  src='" + product.images[i] + "'></div>");   
-        //       imgReplacer[i].src = product.images[i];          
-        //   }
-        // }
 
-      }
-
-      // var item = document.getElementsByClassName("item-detail-child");
-      // var listItem = document.createElement(showItems(("../Images/Items/" + textArr[pathArray[2]] + "_0.jpeg"),("../Images/Items/" + textArr[pathArray[2]] + "_1.jpeg"),("../Images/Items/" + textArr[pathArray[2]] + "_2.jpeg"),("../Images/Items/" + textArr[pathArray[2]] + "_3.jpeg")));
-      // item[0].parentNode.replaceChild(listItem, item[0]);
-      // console.log(item);
+       }
     });
   
   }
 
-  const item = products[window.location.pathname.split('/')[2]]
+  const item = products.find(x => x._id.toLowerCase().includes(window.location.pathname.split('/')[2]))
+  
 
   return (
     <div className='detail-con'>
         
         <div className="item-details">
-          <p className='itemName'>Loading...
+          <p className='itemName'>
           <p>
-            <a className="price">$Loading...</a> 
+            <a className="price">Loading...</a> 
             <p>
             <a className="count">Loading...</a> 
             </p>

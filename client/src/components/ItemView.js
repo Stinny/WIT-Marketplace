@@ -22,7 +22,7 @@ export default function showItem({ product, itemID, itemSize }) {
                 <div className={sizeFormat}>
                     <Carousel className="imgCarousel">
                         <div>
-                            <Link to = {"/item/" + itemID}>
+                            <Link to = {"/item/" + product._id}>
                                 <img src={nullImage}/>
                             </Link>
                         </div>
@@ -42,7 +42,7 @@ export default function showItem({ product, itemID, itemSize }) {
                     <Carousel itemsToShow={1}>
                         {product.images.map((image) => {
                         return <item>
-                            <Link to = {"/item/" + itemID}>
+                            <Link to = {"/item/" + product._id}>
                                 <img src = {image}/>
                             </Link></item>
                         })}

@@ -89,12 +89,15 @@
     margin-top: 10px;
 }
 
+.smallCarousel{
+    height: 237px;
+}
 .filter{
     border: none;
     font-size:1.1em;
     cursor: pointer;
     margin-top: 2px;
-    margin-buttom: 2px;
+    margin-bottom: 2px;
     background-color: #ffffff;
 }
 

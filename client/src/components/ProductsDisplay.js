@@ -33,7 +33,7 @@ const ProductsDisplay = ({ products }) => {
         <div className='item'>
         <Carousel className='parent' breakPoints={breakPoints} enableAutoPlay={true}>
             {products.slice(products.length - nItems, products.length).map((product) => (
-              <ItemView className='child' product={product} itemID={products.length - nItems + initNum() - 1}
+              <ItemView className='child' product={product}
               itemSize={"large"}/>
             )).reverse()}
           </Carousel>

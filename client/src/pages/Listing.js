@@ -4,18 +4,20 @@ import ItemView from '../components/ItemView'
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllProducts } from '../api/calls';
 
-function Listings(){
+function Listings( {searchTerm} ) {
 
     //Load products from database
     const dispatch = useDispatch();
     const products = useSelector((state) => state.product.products);
+    const input = document.getElementById("search-input");
+    let filter = products.filter(x => x.title.toLowerCase().includes(input.value));
 
     useEffect(() => {
         getAllProducts(dispatch);
+            filter = products.filter(x => x.title.toLowerCase().includes(input.value));
     }, []);
 
     let itemNumber = 0;
-
     return (
         <div id='page-container'>
 
@@ -55,7 +57,7 @@ function Listings(){
                             <input className='price-range' type='text' placeholder='min'/>
                             -
                             <input className='price-range' type='text' placeholder='max'/>
-                            <button className='go'>></button>
+                            <button className='go'></button>
                         </div>
 
                     </div>
@@ -102,8 +104,8 @@ function Listings(){
                 </div>
 
                 <div className='listings-con'>
-                    {products.map((p) => (
-                        <ItemView product={p} itemID={itemNumber++} itemSize={"small"}/>
+                    {filter.map((p) => (
+                        <ItemView product={p} itemSize={"small"}/>
                     ))}
                 </div>
 

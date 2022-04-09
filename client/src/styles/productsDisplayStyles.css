@@ -28,6 +28,8 @@
   padding: 10px;
   margin-bottom: 20px;
   justify-content: flex-start;
+  margin-left: 4%;
+  margin-right: 4%;
   flex-wrap: wrap;
 }
 

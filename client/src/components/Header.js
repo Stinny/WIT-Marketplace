@@ -11,14 +11,15 @@ const Header = () => {
   const navigate = useNavigate();
 
   //Add capability to search when enter is pressed. Need to wait for DOM.
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", function(event) {
     let input = document.getElementById("search-input")
 
-    //On enter navigate to listings and reset the text input
-    input.addEventListener("keypress",function (e) {
+    //On enter navigate to listings
+    input.addEventListener("keypress", function(e) {
       if (e.key === 'Enter') {
         navigate('/Listing');
-        input.value = "";
+
+        //input.value = "";
       }
     });
   });
