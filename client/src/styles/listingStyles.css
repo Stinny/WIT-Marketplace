@@ -4,7 +4,7 @@
 }
 
 .listings-con{
-    border: 4px #f6bf17 solid;
+    /*border: 4px #f6bf17 solid;*/
     border-radius: 20px;
     margin-right: 5%;
     display: inline-flex;
@@ -13,6 +13,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     flex: 4;
+    height: 100%;
 }
 
 .filter-con{
@@ -24,6 +25,7 @@
     flex: 1;
     padding: 10px;
     margin-left: 5%;
+    height: 100%;
 }
 
 .page-container .itemImg{
