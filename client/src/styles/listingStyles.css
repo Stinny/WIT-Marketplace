@@ -6,13 +6,13 @@
 .listings-con{
     border: 4px #f6bf17 solid;
     border-radius: 20px;
-    margin-right: 10%;
+    margin-right: 5%;
     display: inline-flex;
     flex-direction: row;
     padding: 10px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    flex: 3;
+    flex: 4;
 }
 
 .filter-con{
@@ -23,7 +23,7 @@
     flex-direction: column;
     flex: 1;
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 5%;
 }
 
 .page-container .itemImg{
@@ -46,7 +46,7 @@
 }
 
 #filters-title {
-    padding-left: 15px;
+    padding-left:6%;
     flex: 1;
 }
 
