@@ -10,6 +10,12 @@
   visibility: visible;
 }
 
+/*Carousel images are displayed in original size*/
+.carouselView img{
+  height: 100%;
+  width: 100%;
+}
+
 /*Color of dots to change page*/
 .carouselView button.rec-dot{
   background-color: rgb(255, 199, 8);
