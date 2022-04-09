@@ -110,10 +110,10 @@ const Listings = () => {
                 </div>
 
                 <div className='listings-con'>
-                    {products.slice(0, products.length - (itemsNum+1)).map((product) => (
-                        <ItemView className='itemListHome' product={product} itemID={initNum2() - (itemsNum+1)}
-                                  itemSize={"large"}/>
-                    )).reverse()}
+                    {products.map((product) => (
+                        <ItemView className='itemListHome' product={product} itemID={initNum2()}
+                                  itemSize={"small"}/>
+                    ))}
                 </div>
 
             </div>
