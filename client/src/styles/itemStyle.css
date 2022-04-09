@@ -15,7 +15,7 @@
 }
 
 /* Styling for large items*/
-.carousel500px{
+.carouselLarge{
     font-family: sans-serif;
     text-align: center;
     width:384px;
@@ -28,7 +28,7 @@
 }
 
 /*Item images*/
-.carousel500px img{
+.carouselLarge img{
     height: 250px;
     width: 100%;
 }

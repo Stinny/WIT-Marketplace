@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/productsDisplayStyles.css';
-import ItemView500px from './ItemView500px';
+import ItemViewLarge from './ItemViewLarge';
 import Carousel from 'react-elastic-carousel';
 
 var count = 0;
@@ -32,7 +32,7 @@ const ProductsDisplay = ({ products }) => {
         <div className='item'>
         <Carousel className='parent' breakPoints={breakPoints} enableAutoPlay={true}>
             {products.slice(products.length - nItems, products.length).map((product) => (
-              <ItemView500px className='child' product={product} itemID={products.length - nItems + initNum() - 1}
+              <ItemViewLarge className='child' product={product} itemID={products.length - nItems + initNum() - 1}
               itemSize={500}/>
             )).reverse()}
           </Carousel>
@@ -43,7 +43,7 @@ const ProductsDisplay = ({ products }) => {
         <p className='section'> All Available Items</p>
         <div className='grid'>
           {products.slice(0, products.length - (nItems+1)).map((product) => (
-              <ItemView500px className='itemListHome' product={product} itemID={initNum() - (nItems+1)} itemSize={500}/>
+              <ItemViewLarge className='itemListHome' product={product} itemID={initNum() - (nItems+1)} itemSize={500}/>
           )).reverse()}
         </div>
       </div>
