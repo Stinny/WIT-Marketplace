@@ -20,7 +20,7 @@ function increment(num)
 export default function showItem({ product, itemID, itemSize }) {
 
     let size = itemSize
-    let sizeFormat = size == 500 ? "carouselLarge" :  "smallCarousel";
+    let sizeFormat = size == "large" ? "carouselLarge" :  "smallCarousel";
     console.log(sizeFormat)
   
   if((product != 'undefined' && product))
@@ -46,7 +46,7 @@ export default function showItem({ product, itemID, itemSize }) {
           )
         }
       return (
-        <div className="carouselLarge" >
+        <div className={sizeFormat} >
 
         <div className = "imgCarousel">
         <Carousel itemsToShow={1}>
@@ -70,7 +70,7 @@ export default function showItem({ product, itemID, itemSize }) {
     }
 
   return (
-    <div className='carouselLarge'>
+    <div className={sizeFormat}>
       <Carousel className='imgCarousel'>
         <div>
           <Link to = "/item/0">

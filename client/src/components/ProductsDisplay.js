@@ -33,7 +33,7 @@ const ProductsDisplay = ({ products }) => {
         <Carousel className='parent' breakPoints={breakPoints} enableAutoPlay={true}>
             {products.slice(products.length - nItems, products.length).map((product) => (
               <ItemViewLarge className='child' product={product} itemID={products.length - nItems + initNum() - 1}
-              itemSize={500}/>
+              itemSize={"large"}/>
             )).reverse()}
           </Carousel>
         </div>
@@ -43,7 +43,8 @@ const ProductsDisplay = ({ products }) => {
         <p className='section'> All Available Items</p>
         <div className='grid'>
           {products.slice(0, products.length - (nItems+1)).map((product) => (
-              <ItemViewLarge className='itemListHome' product={product} itemID={initNum() - (nItems+1)} itemSize={500}/>
+              <ItemViewLarge className='itemListHome' product={product} itemID={initNum() - (nItems+1)}
+                             itemSize={"small"}/>
           )).reverse()}
         </div>
       </div>
