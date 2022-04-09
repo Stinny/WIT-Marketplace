@@ -1,7 +1,7 @@
 //import React from 'react';
 import testLogo from '../Images/testLogo.png';
 import '../styles/productDetailStyles.css';
-import ItemView, { showItems } from '../components/ItemView'
+import ItemView, { showItems } from '../components/ItemViewLarge'
 import Carousel from "react-elastic-carousel";
 import raw from '../items.txt';
 import React, { useEffect } from 'react';
@@ -79,7 +79,7 @@ const ProductDetail = () => {
             <button class="instantButton">Buy Now</button>
 
           </p>
-          <ItemView className="item-detail-child" data={item}>
+          <ItemView className="item-detail-child" product={item}>
             
           </ItemView>
         </div>
