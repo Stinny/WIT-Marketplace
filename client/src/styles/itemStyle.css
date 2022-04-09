@@ -2,7 +2,7 @@
 .smallCarousel{
     font-family: sans-serif;
     text-align: center;
-    width:289px;
+    width:285px;
     background-color: #cdcece;
     margin-left: 10px;
     border: #c6c7c7 solid 2px;
@@ -27,6 +27,14 @@
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
+/* extraL large items formatting*/
+.xLargeCarousel{
+    font-family: sans-serif;
+    text-align: center;
+    width:584px;
+}
+
 
 /*Item images*/
 .carouselLarge img{

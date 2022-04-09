@@ -12,7 +12,7 @@ import nullImage from '../Images/nullImage.png';
 
 export default function showItem({ product, itemID, itemSize }) {
 
-    let sizeFormat = itemSize == "large" ? "carouselLarge" :  "smallCarousel";
+    let sizeFormat = itemSize == "large" ? "carouselLarge" :  itemSize ==  "xLarge" ? "xLargeCarousel" : "smallCarousel";
 
     if((product != 'undefined' && product)) {
 

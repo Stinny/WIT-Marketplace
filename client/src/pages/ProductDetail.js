@@ -60,7 +60,7 @@ const ProductDetail = () => {
             <button class="instantButton">Buy Now</button>
 
           </p>
-          <ItemView className="item-detail-child" product={item}>
+          <ItemView className="item-detail-child" product={item} itemSize={"xLarge"} >
             
           </ItemView>
         </div>
