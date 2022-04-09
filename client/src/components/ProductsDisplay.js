@@ -13,7 +13,7 @@ const ProductsDisplay = ({ products }) => {
     { width: 1500, itemsToShow: 4 },
   ];
 
-  var x = 0;
+  let x = 0;
 
   function initNum()
   {

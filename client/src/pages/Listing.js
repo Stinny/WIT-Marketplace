@@ -12,18 +12,16 @@ const Listings = () => {
 
     useEffect(() => {
         getAllProducts(dispatch);
-
     }, []);
 
-    var x = 0;
+    let x2 = 0;
 
-    function initNum()
-    {
-        x++;
-        return x;
+    function initNum2() {
+        x2++;
+        return x2;
     }
 
-    var nItems = 3
+    let itemsNum = 3
 
 
     return (
@@ -112,8 +110,8 @@ const Listings = () => {
                 </div>
 
                 <div className='listings-con'>
-                    {products.slice(0, products.length - (nItems+1)).map((product) => (
-                        <ItemView className='itemListHome' product={product} itemID={initNum() - (nItems+1)}
+                    {products.slice(0, products.length - (itemsNum+1)).map((product) => (
+                        <ItemView className='itemListHome' product={product} itemID={initNum2() - (itemsNum+1)}
                                   itemSize={"large"}/>
                     )).reverse()}
                 </div>
