@@ -39,7 +39,7 @@ const Header = () => {
             type='text'
             placeholder='Enter search key words..'
           />
-          <Link to='/listing'>
+          <Link to='/Listing'>
             <button className='search-button' type='button'>
               Search
             </button>
