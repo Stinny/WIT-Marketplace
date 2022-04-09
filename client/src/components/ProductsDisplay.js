@@ -14,19 +14,12 @@ const ProductsDisplay = ({ products }) => {
   ];
 
   let x = 0;
+  let item = 0;
 
   function initNum()
   {
     x++;
     return x;
-  }
-
-  let x3 = 0;
-
-  function initNum3()
-  {
-    x3++;
-    return x3;
   }
 
   //Set to the desired number of the newest items to show in the top
@@ -51,8 +44,7 @@ const ProductsDisplay = ({ products }) => {
         <p className='section'> All Available Items</p>
         <div className='grid'>
           {products.map((product) => (
-              <ItemView className='itemListHome' product={product} itemID={initNum3()  }
-                             itemSize={"small"}/>
+              <ItemView className='itemListHome' product={product} itemID={item++} itemSize={"small"}/>
           ))}
         </div>
       </div>

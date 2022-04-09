@@ -14,15 +14,7 @@ const Listings = () => {
         getAllProducts(dispatch);
     }, []);
 
-    let x2 = 0;
-
-    function initNum2() {
-        x2++;
-        return x2;
-    }
-
-    let itemsNum = 3
-
+    let itemId = 0;
 
     return (
         <div id='page-container'>
@@ -111,7 +103,7 @@ const Listings = () => {
 
                 <div className='listings-con'>
                     {products.map((product) => (
-                        <ItemView className='itemListHome' product={product} itemID={initNum2()}
+                        <ItemView className='itemListHome' product={product} itemID={itemId++}
                                   itemSize={"small"}/>
                     ))}
                 </div>
