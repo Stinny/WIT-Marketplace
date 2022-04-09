@@ -1,8 +1,31 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../styles/listingStyles.css';
 import ItemView from '../components/ItemView'
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllProducts } from '../api/calls';
 
 const Listings = () => {
+
+    //Load products from database
+    const dispatch = useDispatch();
+    const products = useSelector((state) => state.product.products);
+
+    useEffect(() => {
+        getAllProducts(dispatch);
+
+    }, []);
+
+    var x = 0;
+
+    function initNum()
+    {
+        x++;
+        return x;
+    }
+
+    var nItems = 3
+
+
     return (
         <div id='page-container'>
 
@@ -89,91 +112,10 @@ const Listings = () => {
                 </div>
 
                 <div className='listings-con'>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-                    <div className='itemImg'>
-                        <ItemView/>
-                    </div>
-
+                    {products.slice(0, products.length - (nItems+1)).map((product) => (
+                        <ItemView className='itemListHome' product={product} itemID={initNum() - (nItems+1)}
+                                  itemSize={"large"}/>
+                    )).reverse()}
                 </div>
 
             </div>
