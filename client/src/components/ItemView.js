@@ -10,87 +10,75 @@ import img2 from '../Images/e2.jpeg';
 import img3 from '../Images/e3.jpeg';
 import nullImage from '../Images/nullImage.png';
 
-var counter = 0;
-
-function increment(num)
-{
-  return num++;
-}
-
 export default function showItem({ product, itemID, itemSize }) {
 
-    let size = itemSize
-    let sizeFormat = size == "large" ? "carouselLarge" :  "smallCarousel";
-    console.log(sizeFormat)
-  
-  if((product != 'undefined' && product))
-    {
-      if(product.images.length < 1)
-        {
-          return(
-            <div className={sizeFormat} >
-            <Carousel className="imgCarousel">
-                <div>
-                  <Link to = {"/item/" + itemID}>
-                  <img src={nullImage}/>
-                  </Link>
-                    
+    let sizeFormat = itemSize == "large" ? "carouselLarge" :  "smallCarousel";
+
+    if((product != 'undefined' && product)) {
+
+        //If no images set to null image
+        if(product.images.length < 1) {
+            return(
+                <div className={sizeFormat}>
+                    <Carousel className="imgCarousel">
+                        <div>
+                            <Link to = {"/item/" + itemID}>
+                                <img src={nullImage}/>
+                            </Link>
+                        </div>
+                    </Carousel>
+                    <div id="info">
+                        <p>{product.title}</p>
+                        <p>{"$" + product.price}</p>
+                    </div>
                 </div>
-            </Carousel>
-            <div id="info">
-                <p>{product.title}</p>
-                <p>{"$" + product.price}</p>
-            </div>
-
-          </div>
-          )
+            )
         }
-      return (
-        <div className={sizeFormat} >
 
-        <div className = "imgCarousel">
-        <Carousel itemsToShow={1}>
-          {product.images.map((image) => {
-            return <item>
-              <Link to = {"item/" + itemID}>
-              <img src = {image}/>
-              </Link>
-              
-              </item>
-          })}
-        </Carousel>
-        <div id="info">
-                <p>{product.title}</p>
-                <p>{"$" + product.price}</p>
+        //Else there are images
+        return (
+            <div className={sizeFormat}>
+                <div className = "imgCarousel">
+                    <Carousel itemsToShow={1}>
+                        {product.images.map((image) => {
+                        return <item>
+                            <Link to = {"/item/" + itemID}>
+                                <img src = {image}/>
+                            </Link></item>
+                        })}
+                    </Carousel>
+                    <div id="info">
+                    <p>{product.title}</p>
+                    <p>{"$" + product.price}</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
-      );
-
+        );
     }
 
-  return (
-    <div className={sizeFormat}>
-      <Carousel className='imgCarousel'>
-        <div>
-          <Link to = "/item/0">
-             <img src = {img0}/>
-          </Link>
+    //If product is undefined map to default product
+    return (
+        <div className={sizeFormat}>
+            <Carousel className='imgCarousel'>
+                <div>
+                    <Link to = "/item/0">
+                        <img src = {img0}/>
+                    </Link>
+                </div>
+                <div>
+                    <img src={img1} />
+                </div>
+                <div>
+                    <img src={img2} />
+                </div>
+                <div>
+                    <img src={img3} />
+                </div>
+            </Carousel>
+            <div id='info'>
+                <p>title</p>
+                <p>$1,000</p>
+            </div>
         </div>
-        <div>
-          <img src={img1} />
-        </div>
-        <div>
-          <img src={img2} />
-        </div>
-        <div>
-          <img src={img3} />
-        </div>
-      </Carousel>
-      <div id='info'>
-        <p>title</p>
-        <p>$1,000</p>
-      </div>
-    </div>
-  );
+    );
 }
