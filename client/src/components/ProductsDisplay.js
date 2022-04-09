@@ -43,8 +43,7 @@ const ProductsDisplay = ({ products }) => {
         <p className='section'> All Available Items</p>
         <div className='grid'>
           {products.slice(0, products.length - (nItems+1)).map((product) => (
-              <ItemView500px className='itemListHome' product={product} itemID={initNum() - (nItems+1)}
-                             itemSize={500}/>
+              <ItemView500px className='itemListHome' product={product} itemID={initNum() - (nItems+1)} itemSize={500}/>
           )).reverse()}
         </div>
       </div>

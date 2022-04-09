@@ -21,6 +21,7 @@ export default function showItem({ product, itemID, itemSize }) {
 
     let size = itemSize
     let sizeFormat = size == 500 ? "carousel500px" :  "smallCarousel";
+    console.log(sizeFormat)
   
   if((product != 'undefined' && product))
     {

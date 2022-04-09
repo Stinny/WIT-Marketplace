@@ -1,12 +1,20 @@
+/* Styling for small items*/
 .smallCarousel{
     font-family: sans-serif;
     text-align: center;
-    width:210px;
+    width:214px;
     background-color: #cdcece;
     margin-left: 10px;
     border: #c6c7c7 solid 2px;
 }
 
+/* small images formatting*/
+.smallCarousel img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for large items*/
 .carousel500px{
     font-family: sans-serif;
     text-align: center;
@@ -19,27 +27,18 @@
     margin-bottom: 10px;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-#info{
-    margin-top: 0px;
-    background-color: white;
-    margin-right: 0px;
-    width: 100%;
-    padding-bottom: 10px;
-    margin-bottom: 0px;
-}
-
+/*Item images*/
 .carousel500px .imgCarousel img{
     height: 250px;
     width: auto;
 }
 
+/*Item information*/
+#info{
+    background-color: white;
+    width: 100%;
+    padding-bottom: 10px;
+}
 
 /*Settings for carousels buttons*/
 
