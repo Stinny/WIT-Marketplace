@@ -1,7 +1,7 @@
 //import React from 'react';
 import testLogo from '../Images/testLogo.png';
 import '../styles/productDetailStyles.css';
-import ItemView, { showItems } from '../components/ItemViewLarge'
+import ItemView, { showItems } from '../components/ItemView'
 import Carousel from "react-elastic-carousel";
 import raw from '../items.txt';
 import React, { useEffect } from 'react';

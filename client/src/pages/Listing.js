@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/listingStyles.css';
-import ItemView from '../components/ItemViewLarge'
+import ItemView from '../components/ItemView'
 
 const Listings = () => {
     return (
