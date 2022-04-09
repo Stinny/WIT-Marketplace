@@ -57,15 +57,15 @@
 }
 
 #list-title{
-    margin-left: 20em;
     flex: 3;
+    margin-left: 200%;
 }
 
 #sorting p{
     font-size: 1.5em;
     flex: 3;
     padding-top: 3px;
-    margin-left: 400px;
+    margin-left: 20em;
 }
 
 #select-sort-by{
