@@ -3,8 +3,26 @@ import '../styles/header.css';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from '../Images/testLogo.png';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+
+  //To navigate to other sites
+  const navigate = useNavigate();
+
+  //Add capability to search when enter is pressed. Need to wait for DOM.
+  document.addEventListener("DOMContentLoaded", () => {
+    let input = document.getElementById("search-input")
+
+    //On enter navigate to listings and reset the text input
+    input.addEventListener("keypress",function (e) {
+      if (e.key === 'Enter') {
+        navigate('/Listing');
+        input.value = "";
+      }
+    });
+  });
+
   return (
     <nav className='nav-con'>
       <div className='header-con'>
@@ -16,7 +34,7 @@ const Header = () => {
         </div>
 
         <div className='search-area'>
-          <input
+          <input id="search-input"
             className='search-bar'
             type='text'
             placeholder='Enter search key words..'

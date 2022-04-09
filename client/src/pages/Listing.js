@@ -4,7 +4,7 @@ import ItemView from '../components/ItemView'
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllProducts } from '../api/calls';
 
-const Listings = () => {
+function Listings(){
 
     //Load products from database
     const dispatch = useDispatch();
