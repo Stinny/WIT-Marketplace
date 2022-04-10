@@ -61,3 +61,7 @@
   flex-direction: column;
   width: 100%;
 }
+
+.highlight{
+  background-color: rgba(220, 38, 43, 0.2);
+}
