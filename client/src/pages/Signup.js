@@ -34,8 +34,8 @@ const Signup = () => {
       }
       //Check if email is not a WIT email
       if (!required[2].value.includes("@wit.edu") && required[2].value != "") {
-        alert("You must use a WIT email address")
         required[2].classList.add("highlight");
+        alert("You must use a WIT email address")
         e.preventDefault();
       }
       //Check if password is blank
