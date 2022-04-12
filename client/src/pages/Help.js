@@ -12,7 +12,6 @@ const AboutUs = () => {
                         <strong> Step 2.  </strong> Press on the sell button <br/>
                         <strong> Step 3.  </strong> Fill in the fields for title, price, pictures, condition, quantity, and description <br/>
                         <strong> Step 4.  </strong> Press done <br/>
-                        <strong> Step 5.  </strong> Answer your buyers inquiries <br/>
                     </p>
                 </div>
                 <div className= 'help-item'>
